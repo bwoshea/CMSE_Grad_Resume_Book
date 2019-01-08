@@ -5,31 +5,51 @@
 
 % PURPOSE: Keywords will allow employers to quickly find students that are interested in the fields they are looking for.
 
-% INSTRUCTIONS: Add the pertinent keywords from the list below to the "\keywords" macro that  are relevant to your 
-%               research and work. This will make a link between the table of contents and your cover letter and
-%				resume. Please only use the keywords from the list below. 
+% INSTRUCTIONS: Add the pertinent keywords from the list below to the line that begins with "\noindent"
+%               Please only use the keywords from the list below. 
 
 % E.g. If you are interested in appliying data science to specific applications in academia the command would look 
 %      something like:
 
-% \keywords{\hypertarget{data science}{data science}, \hypertarget{applications}{applications} \hypertarget{academia}{academia}}
+% \noindent data science, applications, academia
 
 % List of possible keywords (Please take ONLY the keywords from this list, do not add your own):
-% \hypertarget{computational modeling}{computational modeling}
-% \hypertarget{data science}{data science}
-% \hypertarget{algorithms}{algorithms}
-% \hypertarget{applications}{applications}
-% \hypertarget{industry}{industry}
-% \hypertarget{national lab}{national lab}
-% \hypertarget{academia}{academia}
-% \hypertarget{non-profit}{non-profit}
+% computational modeling
+% data science
+% algorithms
+% applications
+% industry
+% national lab
+% academia
+% non-profit
 
-% Add your keywords here
-\noindent \keywords{\hypertarget{computational modeling}{computational modeling}, \hypertarget{applications}{applications}, 
-                 \hypertarget{national lab}{national lab}}
+% Uncomment packages to test compilation 
+% \documentclass[11pt]{article} 
+% \usepackage[includefoot, includehead, left=1in, right=1in, top=1in, bottom=0.25in]{geometry}
+% \usepackage{graphicx}
+% \usepackage{epsfig}
+% \usepackage{amsmath}
+% \usepackage{subfigure} 
+% \usepackage{hyperref}
+% \usepackage{amssymb}
+% \usepackage{amsmath}
+% \usepackage{latexsym}
+% \usepackage{color}
+% \usepackage[compact]{titlesec}
+% \usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+% \usepackage{hyperref}
+% \usepackage[all]{hypcap}    
+% \hypersetup{
+%     colorlinks,
+%     citecolor=blue,
+%     filecolor=blue,
+%     linkcolor=blue,
+%     urlcolor=blue
+% }
 
+% Uncomment to test in your own latex editor
+% \begin{document} 
 
-\vspace{2em} % space between keywords and cover letter
 
 %-----------------------------------------------------------------------------%
 %								   Cover Letter						  	      %
@@ -44,12 +64,28 @@
 %            The font will be 11 pt font. You can test this in online latex editors like overleaf or on your own latex 
 %			 editor to guage the size of the compiled pdf.
 %
+%            Be sure to uncomment the packages above and the begin and end document commands so that it compiles. 
 
-\section{Lucas Stanek} % Add your name here
-\label{sec:lucas_stanek} % add 'firstname_lastname' with no upper case letters
+
+% Add your keywords here
+\noindent {\textbf{Keywords:}} computational modeling, applications, national lab
+
+
+\vspace{2em} % space between keywords and cover letter
+
+% Add your name here
+\section{Lucas Stanek}
+
+% Also add your keywords to this part. Just copy and paste them after "Keywords:"
+\addtocontents{toc}{Keywords: computational modeling, applications, national lab\par}
+
+% add 'firstname_lastname' with no upper case letters
+\label{sec:lucas_stanek} 
+
 
 \setlength\parindent{0cm}
 
+% Edit this letter to make it as you wish. Keep in mind this page must be no longer than 1 page compiled. 
 To whom it may concern:\\
 
 My name is Lucas Stanek, and I am a doctoral student in the Department of CMSE with an anticipated graduation date of May 2022. {\textbf{I am interested in summer internship opportunities in industry or the national laboratory system, focusing generally in areas of computational modeling with specifically in the area of or related to computational plasma physics.}} \\
@@ -64,4 +100,10 @@ Sincerely, \\
 \vspace{1em} 
 Lucas Stanek\\
 \end{flushright}
+
+
+
+% Uncomment to test in your own latex editor
+% \end{document} 
+
 
