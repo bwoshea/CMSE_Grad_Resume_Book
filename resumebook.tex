@@ -1,0 +1,120 @@
+\documentclass[11pt]{article} 
+
+\pdfoutput=1
+
+\usepackage[includefoot, includehead, left=1in, right=1in, top=1in, bottom=0.25in]{geometry}
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{amsmath}
+\usepackage{subfigure} 
+\usepackage{hyperref}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{latexsym}
+\usepackage{color}
+% \usepackage{fancyhdr}
+\usepackage[compact]{titlesec}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage{hyperref}
+\usepackage[all]{hypcap}    
+\hypersetup{
+    colorlinks,
+    citecolor=blue,
+    filecolor=blue,
+    linkcolor=blue,
+    urlcolor=blue
+}
+
+\setcounter{tocdepth}{2}  %%% suppressess sub-sub-sections in table of
+                          %%% contents; make larger to show
+                          %%% subsubsections in TOC
+
+%\usepackage[final]{pdfpages}
+
+% comment out the following chunk of code to get rid of the "DRAFT"
+% watermark.  also see:
+% http://tex.stackexchange.com/questions/118939/add-watermark-that-overlays-the-images
+
+%\usepackage{draftwatermark}
+%\SetWatermarkText{DRAFT}
+%\SetWatermarkScale{4}
+%\SetWatermarkLightness{0.85}
+
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\green}[1]{\textcolor{green}{#1}}
+\newcommand{\needcite}[1]{\textcolor{red}{(CITE: #1)}}
+\newcommand{\keywords}[1]{\textbf{Keywords}: #1}
+
+\renewcommand{\contentsname}{Table of Contents}
+
+\begin{document}
+
+
+\vspace{-50mm}
+\title{R\'esum\'e Book for Graduate Students\\
+\vspace{20mm}
+  \large Department of Computational Mathematics, Science and
+  Engineering\\
+\vspace{20mm}
+Michigan State University
+\vspace{50mm}
+}
+
+\author{CMSE faculty\footnote{Contact:
+    \href{mailto:cmsegrad@msu.edu}{CMSE Director of Graduate Studies}
+  }}
+
+\date{November 12, 2018\footnote{Revision date}}
+
+\maketitle
+
+\newpage
+
+\tableofcontents
+
+\vspace{1em}
+
+\noindent Area of Interest: \hyperlink{computational modeling}{computational modeling}, 
+                            \hyperlink{data science}{data science}, 
+                            \hyperlink{algorithms}{algorithms}, \hyperlink{applications}{applications}
+
+
+\noindent Employment: \hyperlink{industry}{industry}, \hyperlink{national lab}{national lab},  
+            \hyperlink{academia}{academia}, \hyperlink{non-profit}{non-profit}
+
+
+\newpage
+
+\input{stanek_cl}
+
+\newpage
+
+\input{stanek_r}
+
+\newpage
+
+\input{studentb_cl}
+
+\newpage
+
+\input{studentb_r}
+
+
+% \newpage
+
+% % Activate the appendix
+% % from now on sections are numerated with capital letters
+% \appendix
+
+% \input{prior_grad_coursework}
+
+% \newpage
+
+% \input{rcr_requirements}
+
+% \newpage
+
+% \input{dual_phd_examples}
+
+\end{document}
